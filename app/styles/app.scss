@@ -1,0 +1,108 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  height: 200px;
+  max-width: 100%;
+}
+
+.well {
+  position: relative;
+  border-bottom: 2px solid lightgrey;
+}
+
+.title{
+  font-size: 40px;
+  font-family: serif;
+  color: #F56400;
+}
+
+.search{
+  border: 2px solid #CFCBC8;
+  padding: 5px;
+  display: inline-block;
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+#searchButton{
+  color: white;
+  background-color: #34A8C4;
+  padding: 6px 9px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.menu{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.menu-item{
+  color: #4B92B5;
+  margin: 10px;
+}
+
+#sign-in{
+  border: 1px solid #4B92B5;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.categories{
+  color: #777780;
+  padding: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+.category-bar{
+  margin-bottom: 15px;
+  border-bottom: 2px solid lightgrey;
+}
+
+.container{
+  background-color: #F5F5F1;
+}
+.price{
+  text-align: right;
+  color: green;
+}
+
+img{
+  width: 100%;
+}
+
+.row{
+  height: 250px;
+}
+
+.sidebar{
+  border: 1px solid lightgrey;
+  padding: 5px;
+  background: white;
+}
+
+.products{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#item-container h5{
+  white-space: nowrap;
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 2 etsy recreation</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="well">
+      <span class="title">Etsy</span>
+      <div class="search">search term
+        <span id="searchButton">search</span>
+      </div>
+      <div class="menu">
+        <span class="menu-item">Sell on Etsy</span>
+        <span class="menu-item">Register</span>
+        <span class="menu-item" id="sign-in">Sign in</span>
+        <span class="menu-item">cart</span>
+      </div>
+    </div>
+
+    <div class="category-bar">
+      <span class="categories">Clothing &amp Accessories</span>
+      <span class="categories">Jewelry</span>
+      <span class="categories">Craft Supplies &amp Tools</span>
+      <span class="categories">Weddings</span>
+      <span class="categories">Entertainment</span>
+      <span class="categories">Home &amp Living</span>
+      <span class="categories">Kids &amp Baby</span>
+      <span class="categories">Vintage</span>
+    </div>
+
+    <div class="container">
+
+      <div class="sidebar col-md-2">
+        <h3>All categories</h3>
+        <ul>
+          <li>Home &amp Living</li>
+          <li>Clothing</li>
+          <li>Craft Supplies &amp Tools</li>
+          <li>Art &amp Collectibles</li>
+          <li>Paper &amp Party Supplies</li>
+          <li>Accessories</li>
+          <li>Bags &amp Purses</li>
+          <li>Jewelry</li>
+          <li>Toys &amp Games</li>
+          <li>Bath &amp Beauty</li>
+          <li>Weddings</li>
+          <li>Books, Movies &amp Music</li>
+          <li>Electronics &amp Accessories</li>
+          <li>Pet Supplies</li>
+          <li>Shoes</li>
+        </ul>
+      </div>
+
+      <div class="col-md-10" id="item-container" class="row">
+      </div>
+
+    </div>
+
+        <script id="item-template" type="text/x-handlebars-template">
+          <div class="col-md-3">
+            <div class="products">
+              <img src="{{ image }}" alt="">
+              <h5>{{ title }}</h5>
+              <span class="maker">{{ Maker }}</span>
+              <span class"price">{{ price }}</span>
+            </div>
+          </div>
+        </script>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>

@@ -10,7 +10,7 @@
 
     <div class="well">
       <span class="title">Etsy</span>
-      <div class="search">search term
+      <div class="search">mountains
         <span id="searchButton">search</span>
       </div>
       <div class="menu">
@@ -35,24 +35,41 @@
     <div class="container">
 
       <div class="sidebar col-md-2">
-        <h3>All categories</h3>
-        <ul>
-          <li>Home &amp Living</li>
-          <li>Clothing</li>
-          <li>Craft Supplies &amp Tools</li>
-          <li>Art &amp Collectibles</li>
-          <li>Paper &amp Party Supplies</li>
-          <li>Accessories</li>
-          <li>Bags &amp Purses</li>
-          <li>Jewelry</li>
-          <li>Toys &amp Games</li>
-          <li>Bath &amp Beauty</li>
-          <li>Weddings</li>
-          <li>Books, Movies &amp Music</li>
-          <li>Electronics &amp Accessories</li>
-          <li>Pet Supplies</li>
-          <li>Shoes</li>
-        </ul>
+        <div class="col-md-12">
+          <div class="top-sidebar">
+          <h3>All categories</h3>
+          <ul>
+            <li>Home &amp Living</li>
+            <li>Clothing</li>
+            <li>Craft Supplies &amp Tools</li>
+            <li>Art &amp Collectibles</li>
+            <li>Paper &amp Party Supplies</li>
+            <li>Accessories</li>
+            <li>Bags &amp Purses</li>
+            <li>Jewelry</li>
+            <li>Toys &amp Games</li>
+            <li>Bath &amp Beauty</li>
+            <li>Weddings</li>
+            <li>Books, Movies &amp Music</li>
+            <li>Electronics &amp Accessories</li>
+            <li>Pet Supplies</li>
+            <li>Shoes</li>
+          </ul>
+          </div>
+          <p class="refine">Refine your search</p>
+          <div class="lower-sidebar">
+            <p>Shop location</p>
+            <input type="radio" name="shopLoc" value="Anywhere" checked> Anywhere<br>
+            <input type="radio" name="shopLoc" value="United States"> United States<br>
+            <p>Choose a custom location</p>
+            <hr>
+            <p>Item type</p>
+            <input type="radio" name="itemType" value="All items" checked> All items<br>
+            <input type="radio" name="item type" value="Handmade"> Handmade<br>
+            <input type="radio" name="item type" value="Vintage"> Vintage<br>
+            <hr>
+          </div>
+        </div>
       </div>
 
       <div class="col-md-10" id="item-container" class="row">
@@ -66,7 +83,7 @@
               <img src="{{ image }}" alt="">
               <h5>{{ title }}</h5>
               <span class="maker">{{ Maker }}</span>
-              <span class"price">{{ price }}</span>
+              <span class="price">{{ price }}</span>
             </div>
           </div>
         </script>

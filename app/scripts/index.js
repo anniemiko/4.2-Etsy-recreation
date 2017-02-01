@@ -2,7 +2,7 @@ var $ = require('jquery');
 var _ = require('underscore');
 var handlebars = require('handlebars');
 
-var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=ceramics&includes=Images,Shop";
+var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=mountain&includes=Images,Shop";
 
 var source = $("#item-template").html();
 console.log(source);

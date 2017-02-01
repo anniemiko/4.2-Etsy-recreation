@@ -12,6 +12,10 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
   box-sizing: border-box;
 }
 
+body{
+  background-color: #F5F5F1;
+}
+
 img {
   height: 200px;
   max-width: 100%;
@@ -20,22 +24,26 @@ img {
 .well {
   position: relative;
   border-bottom: 2px solid lightgrey;
+  background-color: #FFFFFF;
+  margin-bottom: 0px;
 }
 
 .title{
   font-size: 40px;
   font-family: serif;
   color: #F56400;
+  margin: 15px 20px;
 }
 
 .search{
   border: 2px solid #CFCBC8;
   padding: 5px;
   display: inline-block;
-  width: 300px;
-  border-radius: 5px;
+  width: 500px;
+  border-radius: 2px;
   overflow: hidden;
   position: relative;
+  vertical-align: text-bottom;
 }
 
 #searchButton{
@@ -61,27 +69,25 @@ img {
 #sign-in{
   border: 1px solid #4B92B5;
   border-radius: 2px;
-  padding: 5px;
+  padding: 7px;
 }
 
 .categories{
   color: #777780;
-  padding: 10px;
-  padding-bottom: 20px;
+  padding: 15px;
   display: inline-block;
 }
 
 .category-bar{
-  margin-bottom: 15px;
+  margin: 0px;
   border-bottom: 2px solid lightgrey;
+  padding-left: 30px;
+  background-color: #FFFFFF;
 }
 
 .container{
   background-color: #F5F5F1;
-}
-.price{
-  text-align: right;
-  color: green;
+  padding-top: 20px;
 }
 
 img{
@@ -92,17 +98,59 @@ img{
   height: 250px;
 }
 
-.sidebar{
+.top-sidebar, .lower-sidebar{
   border: 1px solid lightgrey;
-  padding: 5px;
   background: white;
+}
+.sidebar ul{
+  padding-left: 20px;
+}
+.sidebar h3{
+  font-size: 13px;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+.sidebar li{
+  color: #0192B7;
+  font-size: 13px;
+  list-style: none;
+  padding-top: 8px;
+}
+
+.refine{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.lower-sidebar{
+  padding: 10px;
 }
 
 .products{
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 1px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
 }
 
-#item-container h5{
+.products h5{
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 5px;
+  margin: 5px 0px;
+}
+
+.products .maker{
+  color: #9D9A9A;
+  padding-left: 5px;
+}
+
+.products .price{
+  float: right;
+  color: #80C042;
+  padding-right: 5px;
 }

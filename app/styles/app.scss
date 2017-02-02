@@ -58,7 +58,7 @@ img{
 
 .menu{
   position: absolute;
-  top: 30px;
+  top: 10px;
   right: 30px;
 }
 
@@ -71,6 +71,13 @@ img{
   border: 1px solid #4B92B5;
   border-radius: 2px;
   padding: 7px;
+}
+
+#cart{
+  border-left: 1px solid #4B92B5;
+  display: inline-block;
+  padding-left: 15px;
+  padding-top: 5px;
 }
 
 .categories{
@@ -96,6 +103,14 @@ img{
 }
 .blue{
 color: #0192B5;
+}
+.images-heading{
+  position: relative;
+}
+.right-heading{
+  display: inline-block;
+  position: absolute;
+  right: 25px;
 }
 
 .top-sidebar, .lower-sidebar{
@@ -182,6 +197,13 @@ footer{
   margin-bottom: 30px;
 }
 
+#last-footer li{
+  list-style: none;
+}
+
+#last-footer{
+  margin: 20px 0px;
+}
 .trends{
 text-align: center;
 margin: 20px 0;

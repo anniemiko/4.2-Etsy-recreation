@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 2 etsy recreation</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="well">
+      <span class="title">Etsy</span>
+      <div class="search">mountains
+        <span id="searchButton">Search</span>
+      </div>
+      <div class="menu">
+        <span class="menu-item">Sell on Etsy</span>
+        <span class="menu-item">Register</span>
+        <span class="menu-item" id="sign-in">Sign in</span>
+        <div class="menu-item" id="cart">
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+          <p>cart</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-bar">
+      <a href="https://www.etsy.com/c/accessories?ref=catnav-2938"><span class="categories">Clothing &amp Accessories</span></a>
+      <a href="https://www.etsy.com/c/jewelry?ref=catnav-1179"><span class="categories">Jewelry</span></a>
+      <a href="https://www.etsy.com/c/craft-supplies-and-tools?ref=catnav-562"><span class="categories">Craft Supplies &amp Tools</span></a>
+      <a href="https://www.etsy.com/c/weddings?ref=catnav-1633"><span class="categories">Weddings</span></a>
+      <a href="https://www.etsy.com/c/books-movies-and-music?ref=catnav-2961"><span class="categories">Entertainment</span></a>
+      <a href="https://www.etsy.com/c/home-and-living?ref=catnav-891"><span class="categories">Home &amp Living</span></a>
+      <a href="https://www.etsy.com/c/toys-and-games/toys/kids-crafts?ref=catnav-2941"><span class="categories">Kids &amp Baby</span></a>
+      <a href="https://www.etsy.com/featured/vintage-party-dresses?ref=catnav-2963"><span class="categories">Vintage</span></a>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row heading-text">
+        <div class="sidebar-heading col-md-2">
+          <span>Show results for:</span>
+        </div>
+        <div class="images-heading col-md-10">
+          <span class="blue">All categories </span>
+          <span> “mountains” (159,825 Results)</span>
+          <div class="right-heading">
+          <span>Sort by:</span>
+          <span class="blue">Relevancy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar col-md-2 col-xs-2">
+        <div class="col-md-12">
+          <div class="top-sidebar">
+          <h3>All categories</h3>
+          <ul>
+            <a href="https://www.etsy.com/c/home-and-living?ref=catnav-891"><li>Home &amp Living</li></a>
+            <a href="https://www.etsy.com/search/clothing?q=mountains&explicit=1"><li>Clothing</li></a>
+            <a href="https://www.etsy.com/search/craft-supplies-and-tools?q=mountains&explicit=1"><li>Craft Supplies &amp Tools</li></a>
+            <a href="https://www.etsy.com/search/art-and-collectibles?q=mountains&explicit=1"><li>Art &amp Collectibles</li></a>
+            <a href="https://www.etsy.com/search?q=cats"><li>Paper &amp Party Supplies</li></a>
+            <a href="https://www.etsy.com/search?q=bears"><li>Accessories</li></a>
+            <a href="https://www.etsy.com/search?q=ceramics"><li>Bags &amp Purses</li></a>
+            <a href="https://www.etsy.com/search?q=jewelry"><li>Jewelry</li></a>
+            <a href="https://www.etsy.com/search?q=toys"><li>Toys &amp Games</li></a>
+            <a href="https://www.etsy.com/search?q=mountains"><li>Bath &amp Beauty</li></a>
+            <a href="https://www.etsy.com/search?q=ocean"><li>Weddings</li></a>
+            <a href="https://www.etsy.com/search?q=blue"><li>Books, Movies &amp Music</li></a>
+            <a href="https://www.etsy.com/search?q=mountains"><li>Electronics &amp Accessories</li></a>
+            <a href="https://www.etsy.com/search?q=pets"><li>Pet Supplies</li></a>
+            <a href="https://www.etsy.com/search?q=shoes"><li>Shoes</li></a>
+          </ul>
+          </div>
+          <p class="refine">Refine your search</p>
+          <div class="lower-sidebar">
+            <p>Shop location</p>
+            <input type="radio" name="shopLoc" id="radio1" checked> <label for="radio1">Anywhere</label><br>
+            <input type="radio" name="shopLoc" id="radio2"> <label for="radio2">United States</label><br>
+            <p>Choose a custom location</p>
+            <hr>
+
+            <p>Item type</p>
+            <input type="radio" name="item type" id="radio3" checked> <label for="radio3">All items</label><br>
+            <input type="radio" name="item type" id="radio4"> <label for="radio4">Handmade</label><br>
+            <input type="radio" name="item type" id="radio5"> <label for="radio5">Vintage</label><br>
+            <hr>
+
+            <p>Price ($)</p>
+            <input type="radio" name="item type" id="radio6" checked> <label for="radio6">Any price</label><br>
+            <input type="radio" name="item type" id="radio7"> <label for="radio7">Under $25</label><br>
+            <input type="radio" name="item type" id="radio8"> <label for="radio8">$25 to $50</label><br>
+            <input type="radio" name="item type" id="radio9"> <label for="radio9">$50 to $100</label><br>
+            <input type="radio" name="item type" id="radio10"> <label for="radio10">Over $100</label><br>
+            <hr>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10 col-xs-10" id="item-container" class="row">
+      </div>
+
+      <footer class="col-md-10 col-md-push-2">
+        <p class="footer-title">Related to mountains</p>
+        <div class="row">
+        <div class="col-md-2 blue">
+          <p>the mountains are calling</p>
+          <p>mountain jewelry</p>
+        </div>
+        <div class="col-md-10 blue">
+          <p>mountain necklace</p>
+          <p>Colorado</p>
+        </div>
+        </div>
+        <div class="row footer-text">
+          <span>Looking for shops?</span>
+          <span class="blue">mountainshadowdesign</span>,
+          <span class="blue">CoastalCrochetCrafts</span>,
+          <span class="blue">MountainsideCrafts</span>.
+          <span class="blue">See more</span>.
+        </div>
+        <div>
+          <span class="number-boxes"><</span><span class="number-boxes">1</span><span class="number-boxes">2</span><span class="number-boxes">3</span><span class="number-boxes">4</span><span class="number-boxes">5</span><span class="number-boxes">6</span><span class="number-boxes">7</span><span class="number-boxes">8</span><span class="number-boxes">...</span><span class="number-boxes">250</span><span class="number-boxes">></span>
+        </div>
+        <div class="row trends">
+          <span>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</span>
+        </div>
+        <div class="col-md-12 col-centered" id="email">Enter your email
+          <span id="emailButton">Subscribe</span>
+        </div>
+      </footer>
+
+      <div class="row border">
+      </div>
+
+      <div class="col-md-10 col-md-push-1" id="last-footer">
+        <div class="col-md-2">
+          <h5>Sell on Etsy</h5>
+          <li>Open a shop</li>
+          <li>Seller Handbook</li>
+          <li>Etsy credit card</li>
+          <li>Manufacturing</li>
+          <li>Local</li>
+        </div>
+        <div class="col-md-2">
+          <h5>Join the community</h5>
+          <li>Teams</li>
+          <li>Forums</li>
+          <li>Upcoming events</li>
+          <li>Affiliates</li>
+          <li>Local</li>
+        </div>
+        <div class="col-md-2">
+          <h5>Join the community</h5>
+          <li>Teams</li>
+          <li>Forums</li>
+          <li>Upcoming events</li>
+          <li>Affiliates</li>
+          <li>Local</li>
+        </div>
+        <div class="col-md-2">
+          <h5>Discover and shop</h5>
+          <li>Gift cards</li>
+          <li>Blog</li>
+          <li>Mobile apps</li>
+          <li>Gift registries</li>
+          <li>Wholesale</li>
+        </div>
+        <div class="col-md-2">
+          <h5>Get to know us</h5>
+          <li>About</li>
+          <li>Policies</li>
+          <li>Careers</li>
+          <li>Press</li>
+          <li>Developers</li>
+        </div>
+      </div>
+
+    </div>
+
+        <script id="item-template" type="text/x-handlebars-template">
+          <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="products">
+              <a href="{{ link }}">
+              <div class="image-box">
+              <img src="{{ image }}" alt=""></div>
+              <h5>{{ title }}</h5>
+              <span class="maker">{{ Maker }}</span>
+              <span class="price">${{ price }}</span>
+              </a>
+            </div>
+          </div>
+        </script>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>

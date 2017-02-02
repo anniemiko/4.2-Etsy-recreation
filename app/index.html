@@ -11,7 +11,7 @@
     <div class="well">
       <span class="title">Etsy</span>
       <div class="search">mountains
-        <span id="searchButton">search</span>
+        <span id="searchButton">Search</span>
       </div>
       <div class="menu">
         <span class="menu-item">Sell on Etsy</span>
@@ -32,9 +32,20 @@
       <span class="categories">Vintage</span>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
+      <div class="row heading-text">
+        <div class="sidebar-heading col-md-2">
+          <span>Show results for:</span>
+        </div>
+        <div class="images-heading col-md-10">
+          <span class="blue">All categories </span>
+          <span> “mountains” (159,825 Results)</span>
+          <span>Sort by:</span>
+          <span class="blue">Relevancy</span>
+        </div>
+      </div>
 
-      <div class="sidebar col-md-2">
+      <div class="sidebar col-md-2 col-xs-2">
         <div class="col-md-12">
           <div class="top-sidebar">
           <h3>All categories</h3>
@@ -59,20 +70,77 @@
           <p class="refine">Refine your search</p>
           <div class="lower-sidebar">
             <p>Shop location</p>
-            <input type="radio" name="shopLoc" value="Anywhere" checked> Anywhere<br>
-            <input type="radio" name="shopLoc" value="United States"> United States<br>
+            <input type="radio" name="shopLoc" id="radio1" checked> <label for="radio1">Anywhere</label><br>
+            <input type="radio" name="shopLoc" id="radio2"> <label for="radio2">United States</label><br>
             <p>Choose a custom location</p>
             <hr>
+
             <p>Item type</p>
-            <input type="radio" name="itemType" value="All items" checked> All items<br>
-            <input type="radio" name="item type" value="Handmade"> Handmade<br>
-            <input type="radio" name="item type" value="Vintage"> Vintage<br>
+            <input type="radio" name="item type" id="radio3" checked> <label for="radio3">All items</label><br>
+            <input type="radio" name="item type" id="radio4"> <label for="radio4">Handmade</label><br>
+            <input type="radio" name="item type" id="radio5"> <label for="radio5">Vintage</label><br>
             <hr>
+
+            <p>Price ($)</p>
+            <input type="radio" name="item type" id="radio6" checked> <label for="radio6">Any price</label><br>
+            <input type="radio" name="item type" id="radio7"> <label for="radio7">Under $25</label><br>
+            <input type="radio" name="item type" id="radio8"> <label for="radio8">$25 to $50</label><br>
+            <input type="radio" name="item type" id="radio9"> <label for="radio9">$50 to $100</label><br>
+            <input type="radio" name="item type" id="radio10"> <label for="radio10">Over $100</label><br>
+            <hr>
+
           </div>
         </div>
       </div>
 
-      <div class="col-md-10" id="item-container" class="row">
+      <div class="col-md-10 col-xs-10" id="item-container" class="row">
+      </div>
+
+      <footer class="col-md-10 col-md-push-2">
+        <p class="footer-title">Related to mountains</p>
+        <div class="row">
+        <div class="col-md-2 blue">
+          <p>the mountains are calling</p>
+          <p>mountain jewelry</p>
+        </div>
+        <div class="col-md-10 blue">
+          <p>mountain necklace</p>
+          <p>Colorado</p>
+        </div>
+        </div>
+        <div class="row footer-text">
+          <span>Looking for shops?</span>
+          <span class="blue">mountainshadowdesign</span>,
+          <span class="blue">CoastalCrochetCrafts</span>,
+          <span class="blue">MountainsideCrafts</span>.
+          <span class="blue">See more</span>.
+        </div>
+        <div>
+          <span class="number-boxes"><</span><span class="number-boxes">1</span><span class="number-boxes">2</span><span class="number-boxes">3</span><span class="number-boxes">4</span><span class="number-boxes">5</span><span class="number-boxes">6</span><span class="number-boxes">7</span><span class="number-boxes">8</span><span class="number-boxes">...</span><span class="number-boxes">250</span><span class="number-boxes">></span>
+        </div>
+        <div class="row trends">
+          <span>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</span>
+        </div>
+        <div class="col-md-12 col-centered" id="email">Enter your email
+          <span id="emailButton">Subscribe</span>
+        </div>
+      </footer>
+
+      <div class="row border">
+      </div>
+
+      <div class="col-md-10 col-md-push-1">
+        <div class="col-md-2">
+          <ul class="li">Join the team</ul>
+          <ul class="li">Forums</ul>
+          <ul class="li">Upcoming events</ul>
+          <ul class="li">Affiliates</ul>
+          <ul class="li">Local</ul>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
       </div>
 
     </div>
@@ -80,10 +148,13 @@
         <script id="item-template" type="text/x-handlebars-template">
           <div class="col-md-3">
             <div class="products">
-              <img src="{{ image }}" alt="">
+              <a href="{{ link }}">
+              <div class="image-box">
+              <img src="{{ image }}" alt=""></div>
               <h5>{{ title }}</h5>
               <span class="maker">{{ Maker }}</span>
-              <span class="price">{{ price }}</span>
+              <span class="price">${{ price }}</span>
+              </a>
             </div>
           </div>
         </script>

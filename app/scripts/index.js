@@ -16,9 +16,10 @@ fetchJSONP(url, function(data) {
     console.log(etsy);
     var content = {
       title: etsy.title,
-      image: etsy.Images[0].url_fullxfull,
+      image: etsy.Images[0].url_170x135,
       price: etsy.price,
-      Maker: etsy.Shop.shop_name
+      Maker: etsy.Shop.shop_name,
+      link: etsy.url
     };
 
     $('#item-container').append(template(content));

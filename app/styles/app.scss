@@ -16,9 +16,8 @@ body{
   background-color: #F5F5F1;
 }
 
-img {
-  height: 200px;
-  max-width: 100%;
+img{
+  min-width: 100%;
 }
 
 .well {
@@ -35,24 +34,26 @@ img {
   margin: 15px 20px;
 }
 
-.search{
-  border: 2px solid #CFCBC8;
-  padding: 5px;
+.search, #email{
+  border: 1px solid #CFCBC8;
+  padding: 7px;
   display: inline-block;
   width: 500px;
-  border-radius: 2px;
+  border-radius: 3px;
   overflow: hidden;
   position: relative;
   vertical-align: text-bottom;
+  background-color: #FFFFFF;
 }
 
-#searchButton{
+#searchButton, #emailButton{
   color: white;
   background-color: #34A8C4;
-  padding: 6px 9px;
+  padding: 8px 11px;
   position: absolute;
   right: 0px;
   top: 0px;
+  font-size: 14px;
 }
 
 .menu{
@@ -90,12 +91,11 @@ img {
   padding-top: 20px;
 }
 
-img{
-  width: 100%;
+.heading-text{
+  margin: 15px 0 5px 15px;
 }
-
-.row{
-  height: 250px;
+.blue{
+color: #0192B5;
 }
 
 .top-sidebar, .lower-sidebar{
@@ -123,6 +123,9 @@ img{
 }
 .lower-sidebar{
   padding: 10px;
+}
+label{
+
 }
 
 .products{
@@ -153,4 +156,51 @@ img{
   float: right;
   color: #80C042;
   padding-right: 5px;
+}
+
+.footer-title{
+  color: #444444;
+  font-weight: bold;
+}
+
+.related{
+  color: #0192B5;
+}
+
+.footer-text{
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+.number-boxes{
+  padding: 5px 8px 8px 8px;
+  border: 1px solid lightgrey;
+  background-color: white;
+}
+
+footer{
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.trends{
+text-align: center;
+margin: 20px 0;
+}
+
+.email{
+  margin-bottom: 25px;
+}
+
+#emailButton{
+  color: white;
+  background-color: #34A8C4;
+  padding: 8px 11px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 14px;
+}
+
+.border{
+  border-bottom: 2px solid lightgrey;
 }
